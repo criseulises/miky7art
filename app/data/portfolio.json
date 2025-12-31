@@ -1,0 +1,85 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Retrato Artístico Profesional",
+      "category": "Fotografías",
+      "image": "https://miky7art.lat/mikyart/wp-content/uploads/2025/12/a69e59169101179.644715bbb83cc-scaled.jpg",
+      "description": "Edición fotográfica profesional con efectos artísticos y retoque avanzado",
+      "client": "Cliente Confidencial",
+      "year": "2024",
+      "services": ["Retoque Fotográfico", "Edición Artística", "Composición Digital"]
+    },
+    {
+      "id": 2,
+      "title": "Ilustración Digital Creativa",
+      "category": "Ilustraciones",
+      "image": "https://miky7art.lat/mikyart/wp-content/uploads/2025/12/ycy3-scaled.jpg",
+      "description": "Arte digital personalizado con técnicas avanzadas de ilustración",
+      "client": "Proyecto Personal",
+      "year": "2024",
+      "services": ["Ilustración Digital", "Arte Conceptual", "Diseño de Personajes"]
+    },
+    {
+      "id": 3,
+      "title": "Diseño de Portada Moderna",
+      "category": "Portadas",
+      "image": "https://miky7art.lat/mikyart/wp-content/uploads/2025/12/85-1-2048x1971.jpg",
+      "description": "Portada creativa y llamativa para redes sociales y medios digitales",
+      "client": "Marca Digital",
+      "year": "2024",
+      "services": ["Diseño de Portadas", "Branding", "Composición Visual"]
+    },
+    {
+      "id": 4,
+      "title": "Retrato Artístico Premium",
+      "category": "Fotografías",
+      "image": "https://miky7art.lat/mikyart/wp-content/uploads/2025/12/a69e59169101179.644715bbb83cc-scaled.jpg",
+      "description": "Fotografía editorial con edición profesional y efectos cinematográficos",
+      "client": "Revista de Moda",
+      "year": "2024",
+      "services": ["Fotografía Editorial", "Retoque Profesional", "Color Grading"]
+    },
+    {
+      "id": 5,
+      "title": "Arte Digital Contemporáneo",
+      "category": "Ilustraciones",
+      "image": "https://miky7art.lat/mikyart/wp-content/uploads/2025/12/ycy3-scaled.jpg",
+      "description": "Ilustración digital con estilo único y vibrante",
+      "client": "Galería de Arte",
+      "year": "2023",
+      "services": ["Arte Digital", "Ilustración Comercial", "Diseño Artístico"]
+    },
+    {
+      "id": 6,
+      "title": "Portada Album Musical",
+      "category": "Portadas",
+      "image": "https://miky7art.lat/mikyart/wp-content/uploads/2025/12/85-1-2048x1971.jpg",
+      "description": "Diseño de portada para álbum musical con identidad visual única",
+      "client": "Artista Independiente",
+      "year": "2024",
+      "services": ["Cover Art", "Diseño Musical", "Identidad Visual"]
+    },
+    {
+      "id": 7,
+      "title": "Logo Vectorial Miky7Art",
+      "category": "Vectores",
+      "image": "/images/logo_miky7art.png",
+      "description": "Diseño de identidad corporativa profesional",
+      "client": "Miky7Art",
+      "year": "2023",
+      "services": ["Diseño de Logo", "Identidad Corporativa", "Vectorización"]
+    },
+    {
+      "id": 8,
+      "title": "Símbolo Minimalista",
+      "category": "Vectores",
+      "image": "/images/just_7logo.png",
+      "description": "Logo minimalista y moderno para marca personal",
+      "client": "Miky7Art",
+      "year": "2023",
+      "services": ["Diseño Minimalista", "Branding", "Diseño de Símbolo"]
+    }
+  ],
+  "categories": ["Todos", "Vectores", "Fotografías", "Ilustraciones", "Portadas"]
+}

@@ -1,36 +1,109 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎨 Miky7Art - Portafolio Profesional
 
-## Getting Started
+Portafolio moderno y profesional para Miky7Art, especializado en diseño gráfico y arte digital.
 
-First, run the development server:
+## 🚀 Tecnologías Utilizadas
+
+- **Next.js 15** - Framework de React con renderizado del lado del servidor
+- **TypeScript** - JavaScript con tipado estático
+- **Tailwind CSS** - Framework CSS utility-first
+- **Framer Motion** - Librería de animaciones para React
+- **React Intersection Observer** - Detección de elementos en viewport
+
+## ✨ Características
+
+- ✅ Diseño moderno y responsivo
+- ✅ Animaciones fluidas y profesionales
+- ✅ Optimizado para SEO
+- ✅ Carga rápida y rendimiento optimizado
+- ✅ Diseño mobile-first
+- ✅ Esquema de colores personalizado (#02ff00, #212121, #ffffff)
+- ✅ Fuente Poppins en todo el sitio
+- ✅ Navegación suave entre secciones
+
+## 🎨 Paleta de Colores
+
+- **Primary**: `#02ff00` (Verde neón)
+- **Dark**: `#212121` (Gris oscuro)
+- **White**: `#ffffff` (Blanco)
+- **Background**: `#0a0a0a` (Negro profundo)
+
+## 📦 Instalación y Uso
 
 ```bash
+# Instalar dependencias
+npm install
+
+# Iniciar servidor de desarrollo
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Construir para producción
+npm run build
+
+# Iniciar en producción
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver el resultado.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌐 Estructura del Proyecto
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+portafolio-miky7art/
+├── app/
+│   ├── components/
+│   │   ├── Header.tsx       # Navegación principal
+│   │   ├── Hero.tsx         # Sección hero con animaciones
+│   │   ├── About.tsx        # Misión, visión y valores
+│   │   ├── Services.tsx     # Servicios ofrecidos
+│   │   ├── Portfolio.tsx    # Galería de trabajos
+│   │   ├── Contact.tsx      # Formulario de contacto
+│   │   └── Footer.tsx       # Pie de página
+│   ├── globals.css          # Estilos globales
+│   ├── layout.tsx           # Layout principal
+│   └── page.tsx             # Página principal
+├── public/
+│   └── images/              # Imágenes y logos
+└── next.config.ts           # Configuración de Next.js
+```
 
-## Learn More
+## 📱 Secciones
 
-To learn more about Next.js, take a look at the following resources:
+1. **Hero** - Presentación principal con logo animado
+2. **Nosotros** - Misión, visión y valores de Miky7Art
+3. **Servicios** - Vectores, fotografías, ilustraciones y portadas
+4. **Portafolio** - Galería filtrable de trabajos
+5. **Contacto** - Formulario y datos de contacto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎯 Mejores Prácticas Implementadas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Componentes reutilizables y modulares
+- TypeScript para type safety
+- Lazy loading de imágenes con Next.js Image
+- Animaciones optimizadas con Framer Motion
+- Scroll behavior suave
+- Accesibilidad mejorada
+- SEO optimizado con metadata
+- Responsive design
 
-## Deploy on Vercel
+## 🔧 Configuración
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+El proyecto está configurado con:
+- ESLint para linting
+- TypeScript para tipado estático
+- Tailwind CSS para estilos
+- Next.js 15 con App Router
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📄 Licencia
+
+© 2025 Miky7Art. Todos los derechos reservados.
+
+## 🤝 Contacto
+
+- **Email**: contacto@miky7art.lat
+- **Website**: https://miky7art.lat
+- **Ubicación**: Ecuador, Latinoamérica
+
+---
+
+Desarrollado con ❤️ por Miky7Art
