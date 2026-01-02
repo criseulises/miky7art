@@ -11,7 +11,7 @@ import Footer from '../../components/Footer';
 
 export default function CategoriaPage() {
   const params = useParams();
-  const categoria = params.categoria as string;
+  const categoria = decodeURIComponent(params.categoria as string);
   const [selectedProject, setSelectedProject] = useState<any>(null);
   const [isClient, setIsClient] = useState(false);
 
