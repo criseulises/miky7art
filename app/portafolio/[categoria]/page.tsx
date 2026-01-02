@@ -45,7 +45,7 @@ export default function CategoriaPage() {
       <Header />
       <main className="min-h-screen bg-[#0a0a0a] pt-20 sm:pt-24">
         {/* Hero Section */}
-        <section className="py-12 sm:py-16 md:py-20 bg-gradient-to-br from-[#212121] to-[#0a0a0a] relative overflow-hidden">
+        <section className="py-16 sm:py-20 md:py-24 bg-gradient-to-br from-[#212121] to-[#0a0a0a] relative overflow-hidden">
           <div className="absolute inset-0 opacity-10">
             <div className="absolute inset-0" style={{
               backgroundImage: `radial-gradient(circle, #02ff00 1px, transparent 1px)`,
@@ -53,27 +53,29 @@ export default function CategoriaPage() {
             }} />
           </div>
 
-          <div className="container mx-auto px-4 sm:px-6 relative z-10">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="text-center max-w-4xl mx-auto"
+              className="text-center max-w-5xl mx-auto"
             >
               <Link
                 href="/portafolio"
-                className="inline-flex items-center gap-2 mb-4 sm:mb-6 text-sm sm:text-base text-gray-400 hover:text-[#02ff00] transition-colors duration-300"
+                className="inline-flex items-center gap-2 mb-6 sm:mb-8 text-sm sm:text-base text-gray-400 hover:text-[#02ff00] transition-colors duration-300"
               >
                 <span>←</span>
                 <span>Volver a Categorías</span>
               </Link>
-              <span className="inline-block px-4 sm:px-5 py-2 sm:py-2.5 bg-[#02ff00]/10 border border-[#02ff00] rounded-full text-[#02ff00] text-xs sm:text-sm font-semibold mb-4 sm:mb-6">
-                {categoryName}
-              </span>
-              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 sm:mb-6 px-4">
-                {categoryName} <span className="text-[#02ff00]">Destacados</span>
+              <div className="mb-6 sm:mb-8">
+                <span className="inline-block px-5 sm:px-6 py-2.5 sm:py-3 bg-[#02ff00]/10 border border-[#02ff00] rounded-full text-[#02ff00] text-sm sm:text-base font-semibold">
+                  {categoryName}
+                </span>
+              </div>
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-6 sm:mb-8 leading-tight">
+                {categoryName} <span className="text-[#02ff00] block sm:inline mt-2 sm:mt-0">Destacados</span>
               </h1>
-              <p className="text-base sm:text-lg md:text-xl text-gray-400 mb-6 sm:mb-8 px-4">
+              <p className="text-lg sm:text-xl md:text-2xl text-gray-400">
                 {filteredProjects.length} proyecto{filteredProjects.length !== 1 ? 's' : ''} en esta categoría
               </p>
             </motion.div>
@@ -184,24 +186,27 @@ export default function CategoriaPage() {
                       animate={{ scale: 1, opacity: 1 }}
                       exit={{ scale: 0.9, opacity: 0 }}
                       transition={{ duration: 0.3 }}
-                      className="bg-gradient-to-br from-[#212121] to-[#1a1a1a] rounded-2xl sm:rounded-3xl overflow-hidden border border-[#02ff00]/30"
+                      className="bg-gradient-to-br from-[#212121] to-[#1a1a1a] rounded-2xl sm:rounded-3xl overflow-hidden border border-[#02ff00]/30 max-h-[90vh]"
                     >
                       {/* Layout Horizontal: Imagen | Detalles */}
-                      <div className="flex flex-col lg:flex-row">
-                        {/* Imagen - Izquierda */}
-                        <div className="relative w-full lg:w-1/2 h-[300px] sm:h-[400px] lg:h-[600px] flex-shrink-0">
-                          <Image
-                            src={selectedProject.image}
-                            alt={`${selectedProject.title} - ${selectedProject.description}`}
-                            fill
-                            sizes="(max-width: 1024px) 100vw, 50vw"
-                            className="object-cover"
-                            priority
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-[#212121] via-transparent to-transparent opacity-40" />
+                      <div className="flex flex-col lg:flex-row max-h-[90vh]">
+                        {/* Imagen - Izquierda (scrollable si es muy larga) */}
+                        <div className="relative w-full lg:w-1/2 flex-shrink-0 bg-[#0a0a0a] overflow-y-auto">
+                          <div className="relative w-full min-h-[300px] sm:min-h-[400px]">
+                            <Image
+                              src={selectedProject.image}
+                              alt={`${selectedProject.title} - ${selectedProject.description}`}
+                              width={800}
+                              height={800}
+                              sizes="(max-width: 1024px) 100vw, 50vw"
+                              className="w-full h-auto object-contain"
+                              priority
+                              style={{ maxHeight: 'none' }}
+                            />
+                          </div>
 
                           {/* Badges en la imagen */}
-                          <div className="absolute top-4 sm:top-6 left-4 sm:left-6 flex flex-wrap gap-2 sm:gap-3">
+                          <div className="absolute top-4 sm:top-6 left-4 sm:left-6 flex flex-wrap gap-2 sm:gap-3 z-10">
                             <span className="px-3 sm:px-4 py-1.5 sm:py-2 bg-[#02ff00] text-[#212121] rounded-full text-xs sm:text-sm font-bold">
                               {selectedProject.category}
                             </span>
@@ -211,8 +216,8 @@ export default function CategoriaPage() {
                           </div>
                         </div>
 
-                        {/* Detalles - Derecha */}
-                        <div className="w-full lg:w-1/2 p-6 sm:p-8 md:p-10 flex flex-col justify-center">
+                        {/* Detalles - Derecha (scrollable) */}
+                        <div className="w-full lg:w-1/2 p-6 sm:p-8 md:p-10 flex flex-col justify-center overflow-y-auto">
                           <motion.div
                             initial={{ x: 20, opacity: 0 }}
                             animate={{ x: 0, opacity: 1 }}
