@@ -12,7 +12,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Miky7Art - Diseño Gráfico & Arte Digital Profesional",
   description: "Transformamos ideas en creaciones visuales únicas. Especialistas en diseño vectorial, ilustración digital, edición fotográfica y portadas profesionales. Soluciones creativas personalizadas para tu marca.",
-  keywords: ["diseño gráfico", "arte digital", "ilustración", "diseño vectorial", "edición fotográfica", "portadas", "identidad visual", "Miky7Art", "Ecuador", "Latinoamérica"],
+  keywords: ["diseño gráfico", "arte digital", "ilustración", "diseño vectorial", "edición fotográfica", "portadas", "identidad visual", "Miky7Art", "República Dominicana", "Santo Domingo", "RD"],
   authors: [{ name: "Miky7Art" }],
   creator: "Miky7Art",
   publisher: "Miky7Art",

@@ -144,7 +144,7 @@ export default function Footer() {
                 <span className="text-[#02ff00] text-xl">📍</span>
                 <div>
                   <div className="text-sm text-gray-400">Ubicación</div>
-                  <span className="text-white">Ecuador, Latinoamérica</span>
+                  <span className="text-white">Santo Domingo, República Dominicana</span>
                 </div>
               </li>
             </ul>

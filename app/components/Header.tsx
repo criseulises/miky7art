@@ -17,11 +17,10 @@ export default function Header() {
   }, []);
 
   const menuItems = [
-    { name: 'Inicio', href: '#inicio' },
-    { name: 'Nosotros', href: '#nosotros' },
-    { name: 'Servicios', href: '#servicios' },
-    { name: 'Portafolio', href: '#portafolio' },
-    { name: 'Contacto', href: '#contacto' },
+    { name: 'Inicio', href: '/' },
+    { name: 'Servicios', href: '/servicios' },
+    { name: 'Portafolio', href: '/portafolio' },
+    { name: 'Contacto', href: '/contacto' },
   ];
 
   return (
@@ -36,7 +35,7 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <motion.a
-            href="#inicio"
+            href="/"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="relative z-10"
@@ -75,7 +74,7 @@ export default function Header() {
               transition={{ delay: menuItems.length * 0.1 }}
             >
               <a
-                href="#contacto"
+                href="/contacto"
                 className="px-6 py-2 bg-[#02ff00] text-[#212121] rounded-full font-semibold hover:bg-[#01cc00] transition-all duration-300 hover:shadow-lg hover:shadow-[#02ff00]/50"
               >
                 Cotizar
@@ -133,7 +132,7 @@ export default function Header() {
               transition={{ delay: menuItems.length * 0.1 }}
             >
               <a
-                href="#contacto"
+                href="/contacto"
                 onClick={() => setMobileMenuOpen(false)}
                 className="px-8 py-3 bg-[#02ff00] text-[#212121] rounded-full font-semibold text-xl hover:bg-[#01cc00] transition-all duration-300"
               >
