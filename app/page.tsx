@@ -6,40 +6,15 @@ export default function Home() {
     <main className={styles.page}>
       <div className={styles.logo}>
         <Image
-          src="/images/logo_m7a.png"
+          src="/images/logo_miky7art_m7a.png"
           alt="Miky7Art"
-          width={3741}
-          height={2509}
+          width={6184}
+          height={4693}
           priority
         />
       </div>
 
-      <p className={styles.name}>MIKY7ART</p>
-
-      <svg
-        className={styles.stroke}
-        viewBox="0 0 600 40"
-        fill="none"
-        aria-hidden="true"
-      >
-        <defs>
-          <filter id="brush" x="-5%" y="-60%" width="110%" height="220%">
-            <feTurbulence
-              type="fractalNoise"
-              baseFrequency="0.035 0.45"
-              numOctaves="2"
-              seed="7"
-            />
-            <feDisplacementMap in="SourceGraphic" scale="7" />
-          </filter>
-        </defs>
-        <path
-          className={styles.strokePath}
-          d="M10 24 C 90 10, 170 32, 260 21 S 440 10, 590 22"
-          pathLength={1}
-          filter="url(#brush)"
-        />
-      </svg>
+      <div className={styles.line} aria-hidden="true" />
 
       <h1 className={styles.title}>Próximamente</h1>
       <p className={styles.subtitle}>Estamos trabajando en eso.</p>
