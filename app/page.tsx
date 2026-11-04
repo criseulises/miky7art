@@ -6,10 +6,10 @@ export default function Home() {
     <main className={styles.page}>
       <div className={styles.logo}>
         <Image
-          src="/images/logo_7.png"
+          src="/images/logo_m7a.png"
           alt="Miky7Art"
-          width={634}
-          height={800}
+          width={1200}
+          height={805}
           priority
         />
       </div>
