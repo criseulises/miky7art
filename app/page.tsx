@@ -6,13 +6,15 @@ export default function Home() {
     <main className={styles.page}>
       <div className={styles.logo}>
         <Image
-          src="/images/logo_miky7art.png"
+          src="/images/logo_7.png"
           alt="Miky7Art"
-          width={866}
-          height={200}
+          width={634}
+          height={800}
           priority
         />
       </div>
+
+      <p className={styles.name}>MIKY7ART</p>
 
       <svg
         className={styles.stroke}

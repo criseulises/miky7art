@@ -24,9 +24,9 @@ export const metadata: Metadata = {
     siteName: "Miky7Art",
     images: [
       {
-        url: "/images/logo_miky7art.png",
-        width: 1200,
-        height: 630,
+        url: "/images/logo_7.png",
+        width: 634,
+        height: 800,
         alt: "Miky7Art - Diseño Gráfico Profesional",
       },
     ],
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Miky7Art - Diseño Gráfico & Arte Digital",
     description: "Transformamos ideas en creaciones visuales únicas",
-    images: ["/images/logo_miky7art.png"],
+    images: ["/images/logo_7.png"],
   },
   robots: {
     index: true,
@@ -51,8 +51,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/images/just_7logo.png",
-    apple: "/images/just_7logo.png",
+    icon: "/images/logo_7.png",
+    apple: "/images/logo_7.png",
   },
 };
 

@@ -9,8 +9,16 @@
 }
 
 .logo {
-  width: min(78vw, 460px);
+  width: min(32vw, 130px);
   animation: paint-in 1.3s cubic-bezier(0.65, 0, 0.35, 1) both;
+}
+
+.name {
+  margin-top: 1.25rem;
+  font-size: clamp(1.25rem, 3.5vw, 1.75rem);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  animation: rise 0.7s ease-out 0.7s both;
 }
 
 .logo img {
@@ -87,6 +95,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .logo,
+  .name,
   .title,
   .subtitle {
     animation: none;
