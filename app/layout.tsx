@@ -10,6 +10,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.miky7art.com"),
   title: "Miky7Art - Diseño Gráfico & Arte Digital Profesional",
   description: "Transformamos ideas en creaciones visuales únicas. Especialistas en diseño vectorial, ilustración digital, edición fotográfica y portadas profesionales. Soluciones creativas personalizadas para tu marca.",
   keywords: ["diseño gráfico", "arte digital", "ilustración", "diseño vectorial", "edición fotográfica", "portadas", "identidad visual", "Miky7Art", "República Dominicana", "Santo Domingo", "RD"],
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Miky7Art - Diseño Gráfico & Arte Digital",
     description: "Creaciones visuales únicas y profesionales. Diseño personalizado desde ilustraciones hasta edición fotográfica.",
-    url: "https://miky7art.lat",
+    url: "https://www.miky7art.com",
     siteName: "Miky7Art",
     images: [
       {

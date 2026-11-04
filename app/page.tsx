@@ -1,19 +1,46 @@
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import CtaBanner from './components/CtaBanner';
-import Footer from './components/Footer';
+import Image from 'next/image';
+import styles from './page.module.css';
 
 export default function Home() {
   return (
-    <>
-      <Header />
-      <main>
-        <Hero />
-        <About />
-        <CtaBanner />
-      </main>
-      <Footer />
-    </>
+    <main className={styles.page}>
+      <div className={styles.logo}>
+        <Image
+          src="/images/logo_miky7art.png"
+          alt="Miky7Art"
+          width={866}
+          height={200}
+          priority
+        />
+      </div>
+
+      <svg
+        className={styles.stroke}
+        viewBox="0 0 600 40"
+        fill="none"
+        aria-hidden="true"
+      >
+        <defs>
+          <filter id="brush" x="-5%" y="-60%" width="110%" height="220%">
+            <feTurbulence
+              type="fractalNoise"
+              baseFrequency="0.035 0.45"
+              numOctaves="2"
+              seed="7"
+            />
+            <feDisplacementMap in="SourceGraphic" scale="7" />
+          </filter>
+        </defs>
+        <path
+          className={styles.strokePath}
+          d="M10 24 C 90 10, 170 32, 260 21 S 440 10, 590 22"
+          pathLength={1}
+          filter="url(#brush)"
+        />
+      </svg>
+
+      <h1 className={styles.title}>Próximamente</h1>
+      <p className={styles.subtitle}>Estamos trabajando en eso.</p>
+    </main>
   );
 }
