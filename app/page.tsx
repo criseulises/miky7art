@@ -8,8 +8,8 @@ export default function Home() {
         <Image
           src="/images/logo_m7a.png"
           alt="Miky7Art"
-          width={1200}
-          height={805}
+          width={3741}
+          height={2509}
           priority
         />
       </div>

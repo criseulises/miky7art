@@ -22,14 +22,6 @@ export const metadata: Metadata = {
     description: "Creaciones visuales únicas y profesionales. Diseño personalizado desde ilustraciones hasta edición fotográfica.",
     url: "https://www.miky7art.com",
     siteName: "Miky7Art",
-    images: [
-      {
-        url: "/images/logo_m7a.png",
-        width: 1200,
-        height: 805,
-        alt: "Miky7Art - Diseño Gráfico Profesional",
-      },
-    ],
     locale: "es_ES",
     type: "website",
   },
@@ -37,7 +29,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Miky7Art - Diseño Gráfico & Arte Digital",
     description: "Transformamos ideas en creaciones visuales únicas",
-    images: ["/images/logo_m7a.png"],
   },
   robots: {
     index: true,
@@ -49,10 +40,6 @@ export const metadata: Metadata = {
       "max-image-preview": "large",
       "max-snippet": -1,
     },
-  },
-  icons: {
-    icon: "/images/logo_m7a.png",
-    apple: "/images/logo_m7a.png",
   },
 };
 
